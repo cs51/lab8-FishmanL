@@ -182,8 +182,8 @@ let buzzFake (s : string) : unit =
 Exercise 5: Register these two news organizations as listeners to the
 newswire event.
 ......................................................................*)
-let _ = add_listener newswire fakeNewsNetwork;;
-let _ = add_listener newswire buzzFake;;
+let x = add_listener newswire fakeNewsNetwork;;
+let y = add_listener newswire buzzFake;;
 
 (* Here are some headlines to play with. *)
 
@@ -213,10 +213,6 @@ the publications don't publish right away. *)
 (*......................................................................
 Exercise 7: Remove the newswire listeners that were previously registered.
 ......................................................................*)
-let x : id = 0;;
-
-let y : id = 1;;
-
 let _ = remove_listener newswire x;;
 
 let _ = remove_listener newswire y;;
