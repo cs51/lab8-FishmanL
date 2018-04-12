@@ -213,10 +213,13 @@ the publications don't publish right away. *)
 (*......................................................................
 Exercise 7: Remove the newswire listeners that were previously registered.
 ......................................................................*)
+let x : id = 0;;
 
-let _ = remove_listener newswire 0;;
+let y : id = 1;;
 
-let _ = remove_listener newswire 1;;
+let _ = remove_listener newswire x;;
+
+let _ = remove_listener newswire y;;
 (*......................................................................
 Exercise 8: Create a new event called publish to signal that all
 stories should be published. The event should be a unit WEvent.event.
